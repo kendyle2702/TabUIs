@@ -6,7 +6,6 @@
 body {
   display: flex;
   font-family: "Poppins", sans-serif;
-  margin: 3px;
 }
 body > div {
   margin: 5% auto 0;
@@ -27,7 +26,7 @@ body > div {
   transition: all 0.5s ease;
 }
 .tab-item {
-  min-width: 50px;
+  min-width: 70px;
   padding: 16px 20px 11px 20px;
   font-size: 20px;
   text-align: center;
@@ -57,7 +56,7 @@ body > div {
 .tab-content {
   padding: 28px 0;
 }
-.tab-content p{
+.tab-content p {
   text-align: justify;
 }
 .tab-pane {
@@ -70,4 +69,14 @@ body > div {
 .tab-pane h2 {
   font-size: 24px;
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 766px) {
+  body > div {
+    max-width: 100vw;
+    margin: 5px;
+  }
+  .tab-item {
+    padding: 16px 10px 11px;
+  }
 }

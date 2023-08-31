@@ -44,5 +44,3 @@ setInterval(() => {
   line.style.width = tabElements[currentIndex].offsetWidth + "px";
   line.style.left = tabElements[currentIndex].offsetLeft + "px";
 }, 3000);
-
-
