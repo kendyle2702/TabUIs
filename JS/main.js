@@ -14,6 +14,8 @@ line.style.left = tabElements[0].offsetLeft + "px";
 
 tabElements.forEach((element, index) => {
   element.addEventListener("click", () => {
+    // Clear animation
+    clearInterval(animationTab)
     // Update current index of tab-item
     currentIndex = index;
     // Remove old element
@@ -29,7 +31,7 @@ tabElements.forEach((element, index) => {
 });
 
 // Auto chuyển đổi tabs
-setInterval(() => {
+const animationTab = setInterval(() => {
   currentIndex++;
   if (currentIndex >= tabElements.length) {
     currentIndex = 0;
@@ -44,3 +46,5 @@ setInterval(() => {
   line.style.width = tabElements[currentIndex].offsetWidth + "px";
   line.style.left = tabElements[currentIndex].offsetLeft + "px";
 }, 3000);
+
+animationTab();
