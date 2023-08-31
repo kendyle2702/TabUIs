@@ -1,15 +1,16 @@
 * {
   padding: 0;
-  margin: 0;
+  margin: 0px;
   box-sizing: border-box;
 }
 body {
   display: flex;
   font-family: "Poppins", sans-serif;
+  margin: 3px;
 }
 body > div {
   margin: 5% auto 0;
-  max-width: 720px;
+  max-width: 600px;
 }
 .tabs {
   display: flex;
@@ -19,14 +20,14 @@ body > div {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 135px;
+  width: 0;
   height: 6px;
   border-radius: 15px;
   background-color: #c23564;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 .tab-item {
-  min-width: 80px;
+  min-width: 50px;
   padding: 16px 20px 11px 20px;
   font-size: 20px;
   text-align: center;
@@ -55,6 +56,9 @@ body > div {
 }
 .tab-content {
   padding: 28px 0;
+}
+.tab-content p{
+  text-align: justify;
 }
 .tab-pane {
   color: #333;
